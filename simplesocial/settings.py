@@ -82,8 +82,12 @@ WSGI_APPLICATION = 'simplesocial.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Demo_Test',
+        'USER':'postgres',
+        'PASSWORD':'sushant@123',
+        'HOST':'localhost',
+        'PORT':'5432',
     }
 }
 
